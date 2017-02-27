@@ -1,0 +1,20 @@
+<section class="thirteen columns">
+  <h1>Programming Skills</h1>
+  <article>
+    {% for skill in site.skills %}
+      <p>
+        {% for i in (1..5) %}
+        {% assign ceiled = skill[1] | ceil %}
+          {% if skill[1] >= i %}
+            <i class="fa fa-star"></i>
+          {% elsif ceiled == i %}
+            <i class="fa fa-star-half-o"></i>
+          {% else %}
+            <i class="fa fa-star-o"></i>
+          {% endif %}
+        {% endfor %}
+        {{ skill[0] }}
+      </p>
+    {% endfor %}
+  </article>
+</section>

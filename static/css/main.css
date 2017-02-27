@@ -6,11 +6,11 @@ body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #27A822;
+  border-top: 3px solid #47a9bf;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
-  padding-bottom: 50px;	
+  padding-bottom: 50px;
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
@@ -96,10 +96,10 @@ body {
   margin: 20px 0;
 }
 .container a {
-  color: #27A822;
+  color: #1f97ad;
 }
 .container a:hover {
-  color: #267723;
+  color: #1f97ad;
 }
 .img-responsive {
  display: block;
@@ -164,7 +164,7 @@ body {
   font-size: 18px;
 }
 
-/* Footer 
+/* Footer
 -------------------------------------------------- */
 
 .footer {
@@ -180,5 +180,5 @@ div.footer{
 /*.footer {
   height: 50px;
   padding-bottom: 15px;
-  
+
 }*/

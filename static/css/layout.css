@@ -1,0 +1,78 @@
+.resume {
+  text-align: left;
+}
+
+.me-container {
+    width: 100px;
+    margin-right: 70px;
+    margin-left: auto;
+}
+
+.me {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section > h1 {
+    font-size: 140%;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article > header > h1 {
+    font-size: 112%;
+    font-weight: bold;
+    line-height: 150%;
+    margin-bottom: 0;
+    color: inherit;
+}
+
+article > header > span + span {
+    margin-left: 2px;
+}
+
+article > header > span + span::before {
+    content: '@';
+    margin-right: 4px;
+}
+
+article > header > span {
+    color: #808080;
+    font-size: 100%;
+}
+
+article > header > span a {
+    color: inherit;
+}
+
+article > header address {
+    display: inline;
+}
+
+article > header address + time {
+    margin-left: 6px;
+}
+
+article > header address + time::before {
+    content: '—';
+    margin-right: 6px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+    /*margin-right: 6px;*/
+}

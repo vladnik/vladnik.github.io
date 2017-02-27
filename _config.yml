@@ -3,7 +3,7 @@ highlighter: rouge
 markdown: kramdown
 rdiscount:
   extensions: [smart]
-permalink: /:title.html
+permalink: /:title
 paginate: 5
 gems: [jekyll-paginate]
 port: 3000
@@ -11,20 +11,31 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://username.github.io/
-baseurl: /sustain/
-title: Chris Turner
-author: Chris Turner
-description: Personal blog and resume
-avatar: profile.png
-email: yourname@email.com
-github: biomadeira/sustain # username
-twitter: username
-linkedin: username
-stackoverflow: username   #e.g: users/2735833/proton1h1
-#Comment out if you don't want disqus 
-disqus: username
-google_analytics: UA-69391421-1
+url: http://vladnik.github.io/
+baseurl:
+title: Engineer's Blog about Life, the Universe and Everything
+author: Volodymyr Ladnik
+description: >
+  The answer to the great Question of Life,
+  the Universe and Everything.
+avatar: profile.jpg
+email: vladnik.github@gmail.com
+github:  vladnik
+linkedin: volodymyrladnik
+website: vladnik.github.io
+google_maps: 'https://www.google.com/maps/place/San+Francisco'
+city: San Francisco
+country: California
+skills:
+  Ruby: 5
+  JavaScript: 4.5
+  Scala: 3
+  Golang: 3
+  Python: 3
+  Swift: 2
+#Comment out if you don't want disqus
+# disqus: username
+# google_analytics: UA-69391421-1
 
 
 # needed for travis-ci build
