@@ -174,7 +174,7 @@ body {
 	color: #6b6b6b;
 }
 div.footer{
-  border-bottom: 5px solid #27A822;;
+  border-bottom: 5px solid #47a9bf;
 }
 /* Set the fixed height of the footer here */
 /*.footer {
@@ -182,3 +182,8 @@ div.footer{
   padding-bottom: 15px;
 
 }*/
+
+@media print{
+  html,body { border: 0; }
+  div.footer { border: 0; }
+}
