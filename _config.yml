@@ -29,9 +29,9 @@ country: California
 skills:
   TypeScript: 5
   JavaScript: 5
-  Golang: 4.5
   Ruby: 4.5
-  Python: 4
+  Python: 4.5
+  Golang: 4.5
   Scala: 3
   Swift: 2
 #Comment out if you don't want disqus
