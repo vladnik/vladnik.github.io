@@ -187,3 +187,7 @@ div.footer{
   html,body { border: 0; }
   div.footer { border: 0; }
 }
+
+.print-only {
+  display: none;
+}

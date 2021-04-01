@@ -5,24 +5,23 @@ layout: layout
 <div class="container resume">
   <div class="row">
     <header class="col-sm-3 col-md-3 col-lg-3">
-      <!-- <div class="me-container"> -->
+      <div class="me-container">
         <img src="{{ site.baseurl }}static/img/profile.jpg" class="me">
-      <!-- </div> -->
+      </div>
       <h1>{{ site.author }}</h1>
-      <p>
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
+      <p class="print-hide">
+        <span class="print-only">Email:</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
       </p>
-      <address>
+      <!-- <address>
           <a href="{{ site.google_maps }}">
               {{ site.city }}<br/>
               {{ site.country }}
           </a>
-      </address>
-      <p>
+      </address> -->
+      <p class="print-hide">
           <a href="https://{{ site.website }}">{{ site.website }}</a><br/>
       </p>
-      <p>
-
+      <p class="print-hide">
           <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
           <a href="https://www.linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i> LinkedIn</a>
       </p>
