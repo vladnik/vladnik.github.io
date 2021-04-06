@@ -1,31 +1,31 @@
-# top level stuff you probably don't need to touch
 highlighter: rouge
 markdown: kramdown
 rdiscount:
   extensions: [smart]
-permalink: /:title
+permalink: :title.html
 paginate: 5
-gems: [jekyll-paginate]
-port: 3000
+plugins: [jekyll-paginate]
+port: 4000
 safe: true
-
-
-# edit here to achieve your personal greatness
-url: http://vladnik.github.io/
-baseurl:
-title: Engineer's Blog about Life, the Universe and Everything
+url: https://vladnik.github.io
 author: Volodymyr Ladnik
-description: >
-  The answer to the great Question of Life,
-  the Universe and Everything.
-avatar: profile.jpg
+
+# edit this section with your information
+# jekyller.github.io - all contents run on /vitae/
+# for a normal use at the base of the server change it to "/"
+baseurl:
+title: Volodymyr Ladnik's Resume
+name: Volodymyr Ladnik
 email: vladnik.github@gmail.com
-github:  vladnik
-linkedin: volodymyrladnik
+email_full: mailto:vladnik.github@gmail.com
 website: vladnik.github.io
-google_maps: 'https://www.google.com/maps/place/San+Francisco'
-city: San Francisco
-country: California
+website_full: https://vladnik.github.io
+github: vladnik
+stackoverflow: 11098769/volodymyr-ladnik
+# tel: '+1'
+# tel_full: tel:+1
+google_maps: https://goo.gl/maps/dnFQ3ZkJX4PWaWTD7
+# google_analytics: UA-69300817-1
 skills:
   TypeScript: 5
   JavaScript: 5
@@ -34,10 +34,6 @@ skills:
   Golang: 4.5
   Scala: 3
   Swift: 2
-#Comment out if you don't want disqus
-# disqus: username
-# google_analytics: UA-69391421-1
-
 
 # needed for travis-ci build
 exclude: [vendor]
