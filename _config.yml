@@ -29,9 +29,10 @@ google_maps: https://goo.gl/maps/dnFQ3ZkJX4PWaWTD7
 skills:
   TypeScript: 5
   JavaScript: 5
-  Ruby: 4.5
-  Python: 4.5
+  Hack: 4.5
   Golang: 4.5
+  Ruby: 4
+  Python: 4
   Scala: 3
   Swift: 2
 

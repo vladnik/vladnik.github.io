@@ -31,8 +31,8 @@
             <a href="{{ site.website_full }}"><i class="fas fa-globe"></i> {{ site.website }}</a><br/>
         </p>
         <p>
-            <a href="{{ site.tel_full }}" id="tel"><i class="fas fa-phone"></i> {{ site.tel }}</a><br/>
-            <a href="{{ site.email_full }}"><i class="fas fa-at"></i> {{ site.email }}</a><br/>
+            <a href="{{ site.tel_full }}" id="tel"><i class="fas fa-phone"></i> </a><br/>
+            <a href="{{ site.email_full }}" id="email"><i class="fas fa-at"></i> </a><br/>
             <a href="https://github.com/{{ site.github }}"><i class="fab fa-github"></i> Github</a><br/>
             <a href="https://stackoverflow.com/users/{{ site.stackoverflow }}"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
         </p>
@@ -60,11 +60,19 @@
 
 </script>
 <script>
-    const tel = window.location.search.slice(1)
+    const searchParams = new URLSearchParams(window.location.search);
+
+    const tel = searchParams.get('t');
     const formatted = `<i class="fas fa-phone"></i> +1 ${tel.slice(0,3)}-${tel.slice(3,6)}-${tel.slice(6)}`
     const link = document.getElementById('tel')
     link.innerHTML = formatted
     link.setAttribute("href",`tel:+1${tel}`)
+
+    const email = searchParams.get('e');
+    const formatted_email = `<i class="fas fa-at"></i> ${ email }`
+    const email_link = document.getElementById('email')
+    email_link.innerHTML = formatted_email
+    email_link.setAttribute("href",`mailto:${email}`)
 </script>
 </body>
 </html>
